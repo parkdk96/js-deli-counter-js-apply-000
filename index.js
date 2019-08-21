@@ -4,6 +4,19 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${position} in line.`;
 }
 
+//keep track of a customer number
+//increase number by 1 each time function is called
+//returns "Welcome you are customer number __."
+var num = 0;
+function takeANumber2() {
+  num++;
+  console.log(`Welcome you are customer number ${num}.`) 
+}
+
+takeANumber2();
+takeANumber2();
+takeANumber2();
+
 function nowServing(katzDeliLine) {
   if (!katzDeliLine.length) {
     return "There is nobody waiting to be served!";
